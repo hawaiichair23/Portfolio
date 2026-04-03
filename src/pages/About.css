@@ -1,10 +1,10 @@
-.page-content a {
+.about-content a {
     color: #c9a84c;
     text-decoration: none;
-    border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+    font-family: 'Inter', sans-serif;
 }
 
-.page-content p {
+.about-content p {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     text-align: left;
