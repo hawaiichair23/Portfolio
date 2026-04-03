@@ -9,7 +9,6 @@ interface HomeProps {
 
 function Home({ theme }: HomeProps) {
     return (
-        <div className="page">
             <div className="page-content centered-text">
                 <HeroSection theme={theme} title="Welcome to My Portfolio" />
                 <div className="page-content">
@@ -19,7 +18,6 @@ function Home({ theme }: HomeProps) {
                     </div>
                 </div>
             </div>
-        </div>
     );
 }
 
