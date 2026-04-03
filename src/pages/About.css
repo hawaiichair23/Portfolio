@@ -1,5 +1,12 @@
+.page-content a {
+    color: #c9a84c;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+}
+
 .page-content p {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     text-align: left;
+    max-width: 600px;
 }
