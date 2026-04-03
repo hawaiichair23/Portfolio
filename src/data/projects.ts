@@ -24,7 +24,7 @@ export const projects: Project[] = [
         description: "A programmable text engine for streamers. Includes realtime 3D rendering with PixiJS and scripting for per-character animations. Runs as transparent overlay over any app.",
         status: "beta",
         techStack: ["Javascript", "PixiJS", "Electron", "Node.js"],
-        projectLink: "#",
+        projectLink: "https://github.com/hawaiichair23/texterity",
         githubLink: "https://github.com/hawaiichair23/texterity"
     },
     {
@@ -33,7 +33,7 @@ export const projects: Project[] = [
         description: "Rapid webdev MCP framework allowing AI to generate webpages in under 10 lines of code with a premade component library and simple syntax.",
         status: "beta",
         techStack: ["MCP Server", "Javascript", "Node.js"],
-        projectLink: "#",
+        projectLink: "https://github.com/hawaiichair23/blueprint",
         githubLink: "https://github.com/hawaiichair23/blueprint"
     },
     {
@@ -42,7 +42,7 @@ export const projects: Project[] = [
         description: "Modern portfolio site built with React and TypeScript, featuring responsive design and smooth animations.",
         status: "live",
         techStack: ["React", "TypeScript"],
-        projectLink: "#",
-        githubLink: "#"
+        projectLink: "https://github.com/hawaiichair23/Portfolio",
+        githubLink: "https://github.com/hawaiichair23/Portfolio"
     }
 ];
