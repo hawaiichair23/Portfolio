@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import brightnessIcon from '../../assets/brightness.png';
 import moonIcon from '../../assets/moon.png';
 import './ThemeToggle.css';
