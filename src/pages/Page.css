@@ -1,0 +1,74 @@
+.page {
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+    animation: fadeIn 0.05s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.centered-text p {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.page-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.page-content p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+/* Dark mode (default) */
+.page-content h1 {
+    color: #f7f7f7ff;
+}
+
+.page-content p {
+    color: #e9e9e9;
+}
+
+/* Light mode */
+body[style*="background: rgb(247, 247, 247)"] .page-content h1,
+body[style*="background: #f7f7f7ff"] .page-content h1 {
+    color: #191919ff;
+}
+
+body[style*="background: rgb(247, 247, 247)"] .page-content p,
+body[style*="background: #f7f7f7ff"] .page-content p {
+    color: #333333;
+}
+
+.page {
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding: 0rem;
+    }
+
+    .page-content {
+        padding: 1rem;
+    }
+}

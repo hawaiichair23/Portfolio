@@ -1,0 +1,13 @@
+
+    .hero-section.centered-hero {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+@media (max-width: 768px) {
+
+    .hero-section.centered-hero {
+        margin-top: 28px;
+        margin-bottom: 0px;
+    }
+}
