@@ -5,8 +5,11 @@ interface RotatingCubeProps {
     size?: number;
 }
 
-function RotatingCube({ size = 60 }: RotatingCubeProps) {
+function RotatingCube({ size }: RotatingCubeProps) {
     const containerRef = useRef<HTMLDivElement>(null);
+    const canvasSize = 300;
+    const center = 150;
+    const cubeSize = size ?? 60;
 
     useEffect(() => {
         if (!containerRef.current) return;
@@ -19,8 +22,8 @@ function RotatingCube({ size = 60 }: RotatingCubeProps) {
             app = new PIXI.Application();
 
             await app.init({
-                width: 300,
-                height: 300,
+                width: canvasSize,
+                height: canvasSize,
                 backgroundAlpha: 0,
                 antialias: true,
             });
@@ -38,8 +41,8 @@ function RotatingCube({ size = 60 }: RotatingCubeProps) {
 
             // Cube vertices
             const vertices = [
-                [-size, -size, -size], [size, -size, -size], [size, size, -size], [-size, size, -size],
-                [-size, -size, size], [size, -size, size], [size, size, size], [-size, size, size]
+                [-cubeSize, -cubeSize, -cubeSize], [cubeSize, -cubeSize, -cubeSize], [cubeSize, cubeSize, -cubeSize], [-cubeSize, cubeSize, -cubeSize],
+                [-cubeSize, -cubeSize, cubeSize], [cubeSize, -cubeSize, cubeSize], [cubeSize, cubeSize, cubeSize], [-cubeSize, cubeSize, cubeSize]
             ];
 
             let angle = 0;
@@ -60,7 +63,7 @@ function RotatingCube({ size = 60 }: RotatingCubeProps) {
             const project3D = (x: number, y: number, z: number) => {
                 const distance = 500;
                 const scale = distance / (distance + z);
-                return { x: x * scale + 150, y: y * scale + 150 };
+                return { x: x * scale + center, y: y * scale + center };
             };
 
             // Animation loop
@@ -117,7 +120,7 @@ function RotatingCube({ size = 60 }: RotatingCubeProps) {
         };
     }, [size]);
 
-    return <div ref={containerRef} style={{ width: '300px', height: '300px' }} />;
+    return <div ref={containerRef} style={{ width: `${canvasSize}px`, height: `${canvasSize}px` }} />;
 }
 
 export default RotatingCube;
