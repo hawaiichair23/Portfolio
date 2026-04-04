@@ -53,6 +53,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    padding-top: 1.625rem;
   }
 
   .mobile-header .theme-toggle,
