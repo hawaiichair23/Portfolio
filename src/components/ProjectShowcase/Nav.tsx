@@ -30,13 +30,15 @@ function Nav({ theme }: NavProps) {
 
     const updatePill = () => {
         if (!navRef.current) return;
-        const activeLink = navRef.current.querySelector('a.active');
-        if (activeLink) {
-            const position = (activeLink as HTMLElement).offsetLeft;
-            const width = (activeLink as HTMLElement).offsetWidth;
-            navRef.current.style.setProperty('--pill-position', `${position}px`);
-            navRef.current.style.setProperty('--pill-width', `${width}px`);
-        }
+        requestAnimationFrame(() => {
+            const activeLink = navRef.current!.querySelector('a.active');
+            if (activeLink) {
+                const position = (activeLink as HTMLElement).offsetLeft;
+                const width = (activeLink as HTMLElement).offsetWidth;
+                navRef.current!.style.setProperty('--pill-position', `${position}px`);
+                navRef.current!.style.setProperty('--pill-width', `${width}px`);
+            }
+        });
     };
 
     return (
