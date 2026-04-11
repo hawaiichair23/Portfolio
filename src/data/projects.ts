@@ -30,7 +30,7 @@ export const projects: Project[] = [
     {
         id: 3,
         title: "Blueprint",
-        description: "Rapid webdev MCP framework allowing AI to generate webpages in under 10 lines of code with a premade component library and simple syntax.",
+        description: "Local web development MCP server allowing AI to generate webpages in under 10 lines of code with a premade component library and simple syntax.",
         status: "beta",
         techStack: ["MCP Server", "Javascript", "Node.js"],
         projectLink: "https://github.com/hawaiichair23/blueprint",
